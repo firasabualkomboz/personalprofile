@@ -1,0 +1,50 @@
+.work{
+    width: 25%;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    margin-right: 50px;
+}
+.alldivwork{
+
+}
+
+.work img{
+ 
+}
+.simple-bar .logo{
+    max-height : 70px;
+}
+.simple-bar.nav-sticky .logo{
+    max-height : 50px;
+}
+.col-xs-11{
+    width: 100%;
+}
+.col-xs-9{
+    width: 100%;
+}
+
+.col-xs-7{
+    width: 100%;
+}
+.col-xs-6{
+    width: 100%;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 767px)
+{
+    .simple-bar .logo {
+        max-height: 50px;
+        bottom: 30px;
+    }
+}
+
+/* css my frame work */
+.texter{
+    color: #0512FE;
+}
