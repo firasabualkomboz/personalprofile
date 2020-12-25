@@ -17,8 +17,10 @@
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="css/theme-1.css" rel="stylesheet" type="text/css" media="all"/>
-		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+	
 		<link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/hover.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
@@ -26,14 +28,34 @@
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<link rel="icon" href="img/icon-logo.png" type="image/icon type">
 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- link animate css -->
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+
+		<script> 
+			$(function() {
+			  $("html").niceScroll();
+			});
+		   </script>
+
+
+
 	</head>
     <body>
-    	<div class="loader">
+
+    	<!-- <div class="loader">
     		<div class="spinner">
 			  <div class="double-bounce1"></div>
 			  <div class="double-bounce2"></div>
 			</div>
-    	</div>
+    	</div> -->
 				
 		<div class="nav-container">
 			<nav class="simple-bar top-bar">
@@ -69,55 +91,75 @@
 		</div>
 		
 		<div class="main-container">
+
 			<header class="header-icons overlay">
 					<div class="background-image-holder parallax-background">
-						<img class="background-image" alt="Background Image" src="img/avatar.jpg">
+						<img class="background-image" alt="Background Image" src="https://media1.tenor.com/images/9fb771fb621c29b0a2eae945b5ceeeb3/tenor.gif?itemid=19019116">
 					</div>
 					
 					<div class="container">
-						<div class="row">
+						<div class="row text-center">
 							<div class="col-sm-12">
-								<h1 class="text-white">
-									Hello, I'm feras komboz.<br>I can create&nbsp;<span>beautiful wbsite</span>&nbsp;for you.
-								<br>
-								Helping You
-reach people through
-Programming & technology
+								<h1 class="text-white ">
+									Hello, I'm <span class="wow animate__bounce">feras komboz</span> <br>I'm A web Developer 
 								</h1>
+								<button class="btn btn-primary ">View my work</button>
 							</div>
 						</div>
-						
-						<div class="row">
-							<div class="col-sm-4">
-							
-								<i class="icon text-white fas fa-laptop-code"></i>
-								<h2 class="text-white">Web Design : Front </h2>
-							</div>
-							
-							<div class="col-sm-4">
-							
-								<i class=" icon text-white fas fa-code"></i>
-								<h2 class="text-white">Web development : laravel</h2>
-							</div>
-
-							<div class="col-sm-4">
-								
-								<i class="icon icon-desktop text-white"></i>
-								<h2 class="text-white">Design : Adobe Xd</h2>
-							</div>
-							
-						
-						</div>
-		
 					</div>	
+
 			</header>
+
+						
+			<section class="pure-text-centered wow animate__backInDown"  data-wow-duration="1s" data-wow-offset="300" >
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							
+							<h1><strong>A little information about me</strong></h1>
+
+
+							<p class="lead">
+								I am <i class="texter"> Firas Abu Al Qumbuz </i>
+
+								Student in the Department of <b class="texter">Information Technology</b>
+								Since high school I have been interested in programming, especially in developing websites,
+								Specialist in the mobile computing department and I have sufficient experience in website design and development							</p>
+						</div>
+					</div>
+		
+				</div>
+			</section>
+			
+			<section class="inline-image-right">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 align-vertical no-align-mobile">
+							<h1>How can I help business owners?</h1>
+							<h6>What am I offering?</h6>
+							<p class="lead">
+								First, simply , I am a web developer and user interface designer ,
+								I can accomplish the development of websites of all kinds ,
+								whether they are educational sites, commercial sites or personal sites, and also blogs that I can work on from the beginning and develop on them. I can work on the algorithm for improving the site to appear in the first search list in the Google search engine, Otherwise, I can design smart applications and I'll show my skills and things that I can do below							</p>
+						</div>
+						
+						<div class="col-sm-6 text-center">
+							<img alt="Product Image" class="product-image img-about-me" src="img/img-me.png">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		
+
 			
 	
 			<section class="no-pad-bottom projects-gallery">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<h1>Check out my latest projects</h1>
+							<h1>My Recent Work</h1>
 					
 						</div>
 					</div>
@@ -131,7 +173,7 @@ Programming & technology
 					<div class="container">
 						<div class="projects-container column-projects">
 					
-							<div class="col-md-4 col-sm-6 project development image-holder">
+							<div class="col-md-4 col-sm-6 project development image-holder wow animate__bounceInLeft" data-wow-duration="3s" data-wow-offset="200">
 								<div class="background-image-holder">
 									<img class="background-image" alt="Background Image" src="img/web/glasses.jpg">
 								</div>
@@ -143,7 +185,7 @@ Programming & technology
 								</div>
 							</div>
 
-							<div class="col-md-4 col-sm-6 project development image-holder">
+							<div class="col-md-4 col-sm-6 project development image-holder" data-wow-duration="3s" data-wow-offset="200">
 								<div class="background-image-holder">
 									<img class="background-image" alt="Background Image" src="img/web/project2.jpg">
 								</div>
@@ -151,6 +193,18 @@ Programming & technology
 									<div class="align-vertical">
 										<h3 class="text-white">Gravity Design <br>	<span>Web Development</span>  </h3>
 										<a target="_blank" href="https://elastic-torvalds-0d9578.netlify.app/" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 project development image-holder" data-wow-duration="3s" data-wow-offset="200">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="img/web/project3.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h3 class="text-white"> Company Profile <br><span>Web Development</span>  </h3>
+										<a target="_blank" href="https://determined-mcnulty-960d31.netlify.app/" class="btn btn-primary btn-white">See Project</a>
 									</div>
 								</div>
 							</div>
@@ -163,125 +217,64 @@ Programming & technology
 				
 			</section>
 	
-			<div class="main-container">
 			
-				
-					<section class="pure-text-contact">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
-									<span class="sub alt-font">Do you like my works?</span>
-									<h1><span>So let's talk about your project!</span></h1>
-									<i class="icon icon-chat"></i>
-									
-									
-								</div>
-							</div>
-				
-						</div>
-					</section>
-				</div>
-	
-<!-- 			
-			<section class="no-pad-bottom projects-gallery">
+			<section class="about-me-knowledge">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<h1>Check out my latest projects
-								<br>
-								Logo design
-							</h1>
-							<p class="lead">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. 
-							</p>
-						</div>
+					<h1 class="text-center">A few things you need to know</h1>
+					<div class="row text-center">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 knowledge">
+
+					<div class="section-work">
+					<!-- <img src="img/icon/frontend.svg" alt=""> -->
+					<i class="icon icon-profile-male"></i>
+					<h4>DESIGN & Front End</h4>
+					<p>Front end design for smartphones and websites and the primitive form of them .</p>
+					<ol class="list-unstyled">
+						<h5>Language & Dev Tools: </h5>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Java Script</li>
+						<li>bootstrap</li>
+						<li>jQuery</li>
+					
+					</ol>
 					</div>
-					
-				</div>
-				
-				<div class="projects-wrapper clearfix">
-					
-					
-					<div class="projects-container">
-					
-						<div class="col-md-6 col-sm-12 no-pad project development image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/logo1.jpg">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 1</strong>&nbsp;Logo company</h1>
-									<p class="text-white">Logo design for a trading company</p>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-6 col-sm-12 no-pad project development image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/project_5.jpg">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 2</strong>&nbsp;Dolor sit</h1>
-									<p class="text-white">Quisquam est, qui dolorem ipsum quia dolor</p>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 no-pad project print image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/project_5.jpg">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><span>Project 3&nbsp;</span>Sit amet</h1>
-									<p class="text-white">Incidunt labore dolore magnam aliquam quaerat voluptatem</p>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 no-pad project branding image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/project_5.jpg">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 4</strong>&nbsp;Lorem dolor</h1>
-									<p class="text-white">Labore et dolore magnam aliquam quaerat</p>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 no-pad project print image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/project_5.jpg">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><span>Project 5&nbsp;</span>Dolor sit amet</h1>
-									<p class="text-white">Dolore magnam aliquam quaerat</p>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-					
+
 					</div>
-					
-				</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 knowledge">
+						<div class="section-work">
+					<img src="img/icon/frontend.svg" alt="">
+							<h4>Back-end Developer</h4>
+							<p>I can create and develop websites from the beginning from the design point to the final point of the site .</p>
+							<ol class="list-unstyled">
+								<h5>Language & Dev Tools: </h5>
+								<li>PHP</li>
+								<li>MySql</li>
+								<li>GitHub</li>
+								<li>Laravel</li>
 				
+							</ol>
+							</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12  knowledge">
+						<div class="section-work">
+							<img src="img/icon/frontend.svg" alt="">
+							<h4>UI & Social media Designer</h4>
+							<p>Social media designs and advertisements of all kinds, and developing social media pages .</p>
+							<ol class="list-unstyled">
+								<h5>Skills Design</h5>
+								<li>UX/UI Design</li>
+								<li>Social media designs</li>
+								<li>Landing page Design</li>				
+							</ol>
+							</div>
+					</div>
+					</div>
+				</div>
 			</section>
-	
-			 -->
+		
 
 			
-
-
-		</div>
-		
 		<div class="footer-container">
 		<footer class="bg-primary short-2">
 				<div class="container">
@@ -300,7 +293,38 @@ Programming & technology
 				
 			</footer>
 		</div>
+
+
+		<!-- scroll top  -->
 				
+		<div id="scroll-top">
+			<i class="icon arrow_right"></i> 
+		</div>
+
+	
+
+
+
+		<!-- end scroll top  -->
+	
+
+		<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<script>
+			$("body").niceScroll({
+  cursorcolor:"#7510F7",
+  cursorwidth:"16px"
+});
+
+		</script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+			</script>
+
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/jquery.min.js"></script>
         <script src="js/jquery.plugin.min.js"></script>
@@ -314,7 +338,8 @@ Programming & technology
         <script src="js/twitterFetcher_v10_min.js"></script>
         <script src="js/lightbox.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
+		<script src="js/scripts.js"></script>
+
     </body>
 </html>
 				
