@@ -1,8 +1,3 @@
-body{
-   
-
-}
-
 /* navbar  */
 .simple-bar{
     font-family: 'Raleway', sans-serif ;
@@ -185,6 +180,7 @@ color: #ff8c00;
 }
 
 /*Testimonials section */
+
 .Testimonials h1{
     font-family: 'Bree Serif', serif;
 }
@@ -313,3 +309,17 @@ color: #ff8c00;
   .bg-primary {
     background-color: #0e0f0f !important;
 }
+
+.last-post h5{
+    margin-top: 10px
+}
+.last-post a{
+    border: 2px solid #7510f7;
+    color: #7510f7;
+}
+.last-post a:hover{
+    background-color: #fff;
+    color: #7510f7;
+    border: 2px solid black;
+}
+
