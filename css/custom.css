@@ -5,21 +5,21 @@
 
 .header-icons span{
 font-weight: bolder;
-color: #ff8c00;
+color: #0512FE;
 }
 
 
 .header-icons button{
     font-weight: bolder;
-    color: #ff8c00;
-    border: solid 2px #ff8c00;
+    color: #fff;
+    border: solid 2px #fff;
 
     }
 
 
     .header-icons button:hover{
         font-weight: bolder;
-        color: #ff8c00;
+        color: #0512FE;
         border: solid 2px #fff;
         background: #fff;
         
@@ -31,7 +31,7 @@ color: #ff8c00;
 }      
 
 .pure-text-centered .texter{
-    color: #ff8c00;
+    color: #0512FE;
 }
 
 /* footer */
@@ -322,4 +322,29 @@ color: #ff8c00;
     color: #7510f7;
     border: 2px solid black;
 }
+/* top-project */
 
+.top-project{
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+.top-project .details-project{
+    margin-top: 40px;
+    padding:40px;
+    background-color: #fafafa;
+}
+.top-project .details-project h3{
+   color: #2D3748;
+   font-size: 20px;
+}
+.top-project .details-project p{
+    color: #2D3748;
+    font-size: 14px;
+    color: #718096;
+ }
+ .top-project .details-project a{
+    color: #2D3748;
+    font-size: 14px;
+    color: #7510f7;
+ }
+/* end top-project */
