@@ -348,3 +348,20 @@ color: #0512FE;
     color: #7510f7;
  }
 /* end top-project */
+.posts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.posts .card{
+   padding: 50px;
+}
+.posts .card img{
+   margin-top: 20px;
+   width: 250px;
+   height: 150px;
+   border: gray solid 1px;
+ }
+
+ .posts .card .card-body{
+     margin-top: 20px;
+ }
