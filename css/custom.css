@@ -367,6 +367,11 @@ color: #0512FE;
  }
 
  /* page blog posts  */
+ .top-title h1{
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 1.2;
+  }
 
  .code-v1 p{
     margin-top: 5%;
@@ -375,14 +380,8 @@ color: #0512FE;
      margin-top: 10%;
      background-color: #fff !important;
  }
- .top-title h1{
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 1.2;
-}
-.code-v1{
-border: solid 2px #7510f7;
-}
+
+
 .code-v01{
     width: 50%;
     margin-top: 10px;

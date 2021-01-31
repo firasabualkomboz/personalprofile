@@ -91,48 +91,39 @@
 
                             </div>
 
+                            <div class="section-v1">
+                                <h2>Search action :</h2>
+                                <p>!! Dont forget use - App\Models\Product; and use Illuminate\Support\Facades\Input;  </p>
+             
+                            </div>
+
+                            <div class="code-v01">
+                                <span> Route::any('/search',function(){ </span>
+                                <br>
+                                <span>   $q = Input::get ( 'q' );</span>
+                                <br>
+                                <span> $product = \App\Models\Product::where('name','LIKE','%'.$q.'%') </span>
+                                <br>
+                                <span>  ->orWhere('price','LIKE','%'.$q.'%')->get(); </span>
+                                <br>
+                                <span> if(count($product) > 0)</span>
+                                <br>
+                                <span>return view('front.search_result') </span>
+                                <br>
+                                <span>    ->withDetails($product)->withQuery ( $q ); </span>
+                                <br>
+                                <span>          else return view ('front.search_result')->withMessage('No Details found. Try to search again !');
+                                 </span>
+                                 <br>
+                                 <span>});</span>
+
+                            </div>
+
     
                         </div>
                     </section>
                     
-                    <section>
-                        <div class="container">
-
-                            <div class="section-v1">
-                                <h2>Search action :</h2>
-                              <p>!! Dont forget use - App\Models\Product; and use Illuminate\Support\Facades\Input;  </p>
-             
-                            </div>
-
-                            <code class="code-v1">
-                                
-                                <p>
-                                    Route::any('/search',function(){
-                                        <br>
-                                        $q = Input::get ( 'q' );
-                                        <br>
-                                        $product = \App\Models\Product::where('name','LIKE','%'.$q.'%')
-                                        <br>
-                                        ->orWhere('price','LIKE','%'.$q.'%')->get();
-                                        <br>
-                                        if(count($product) > 0)
-                                        <br>
-                                            return view('front.search_result')
-                                            <br>
-                                            ->withDetails($product)->withQuery ( $q );
-                                            <br>
-                                    
-                                        else return view ('front.search_result')->withMessage('No Details found. Try to search again !');
-                                    });
-
-                                </p>
-
-                            </code>
-                        </div>
-                    </section>
-
-
-            
+    
                     <section>
                         <div class="container">
 
