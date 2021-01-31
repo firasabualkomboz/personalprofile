@@ -365,3 +365,18 @@ color: #0512FE;
  .posts .card .card-body{
      margin-top: 20px;
  }
+
+ /* page blog posts  */
+
+ .code-v1 p{
+    margin-top: 5%;
+ }
+ .top-title{
+     margin-top: 10%;
+     background-color: #fff !important;
+ }
+ .top-title h1{
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1.2;
+}

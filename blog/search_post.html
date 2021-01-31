@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Web Developer </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="../css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="../css/theme-1.css" rel="stylesheet" type="text/css" media="all"/>
+	
+		<link href="../css/all.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="../css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="../css/hover.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<link rel="icon" href="../img/icon-logo.png" type="image/icon type">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+	</head>
+    <body>
+
+
+				
+		<div class="nav-container">
+			<nav class="simple-bar top-bar">
+				<div class="container">
+				
+				
+					<div class="row nav-menu">
+						<div class="col-md-3 col-sm-3 columns">
+							<a href="../index.html">
+						 <img class="logo logo-dark" alt="Logo" src="../img/logo.png">
+						</div>
+					
+						<div class="col-md-9 col-sm-9 columns text-right">
+							<ul class="menu">
+								<a></a><li><a href="../index.html" target="_self">Home</a></li><li><a href="../about.html" target="_self">About me</a></li><li><a href="../projects.html" target="_self">projects</a></li>								
+							</ul>
+		
+							
+						</div>
+                    </div>
+                    </div>
+                    </nav>
+                    </div>
+
+                  <section class="top-title">
+                  <div class="container">
+                    <h1>How to add simple search to your Laravel website?</h1>
+                  </div>
+                  </section>
+                    
+                    <section>
+                        <div class="container">
+
+                            <div class="section-v1">
+                                <h2>Search form :</h2>
+                                <p>First, create a form search</p>
+             
+                            </div>
+
+                            <code class="code-v1">
+                                
+                                <p>
+                                    < form action="/search" method="POST" role="search">
+                                    <br>
+                                        {{ csrf_field() }}
+                                        <br>
+                                        < input type="text"  name="q" placeholder="@lang('auth.search')">
+                                        <br>
+                                        < button type="submit" class="site-btn">@lang('auth.search_btn')< /button>
+                                        <br>
+                            
+                                    < /form>
+
+                                </p>
+
+                            </code>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="container">
+
+                            <div class="section-v1">
+                                <h2>Search action :</h2>
+                              <p>!! Dont forget use - App\Models\Product; and use Illuminate\Support\Facades\Input;  </p>
+             
+                            </div>
+
+                            <code class="code-v1">
+                                
+                                <p>
+                                    Route::any('/search',function(){
+                                        <br>
+                                        $q = Input::get ( 'q' );
+                                        <br>
+                                        $product = \App\Models\Product::where('name','LIKE','%'.$q.'%')
+                                        <br>
+                                        ->orWhere('price','LIKE','%'.$q.'%')->get();
+                                        <br>
+                                        if(count($product) > 0)
+                                        <br>
+                                            return view('front.search_result')
+                                            <br>
+                                            ->withDetails($product)->withQuery ( $q );
+                                            <br>
+                                    
+                                        else return view ('front.search_result')->withMessage('No Details found. Try to search again !');
+                                    });
+
+                                </p>
+
+                            </code>
+                        </div>
+                    </section>
+
+
+            
+                    <section>
+                        <div class="container">
+
+                            <div class="section-v1">
+                                <h2>Search results :</h2>
+                              
+             
+                            </div>
+
+                            <code class="code-v1">
+                                
+                                <p>
+                                    < div class="container">
+                                        @if(isset($details))
+                                        <br>
+                                            < p> Search a {{ $query }} < /p>
+                                            <br>
+                                        < h2>Data Result< /h2>
+                                            <br>
+                                        < table class="table">
+                                        <br>
+                                            < thead>
+                                            <br>
+                                                < tr>
+                                                <br>
+                                                    < th>Name< /th>
+                                                    <br>
+                                                    < th>price< /th>
+                                                    <br>
+                                                < /tr>
+                                                <br>
+                                            < /thead>
+                                            <br>
+                                            < tbody>
+                                            <br>
+                                                @foreach($details as $product)
+                                                <br>
+                                                < tr>
+                                                <br>
+                                                    < td>{{$product->name}}< /td>
+                                                    <br>
+                                                    < td>{{$product->price}} < /td>
+                                                    <br>
+                                                < /tr>
+                                                <br>
+                                                @endforeach
+                                                <br>
+                                            < /tbody>
+                                            <br>
+                                        < /table>
+                                        <br>
+                                        @endif
+                                        <br>
+                                    < /div>
+                                    <br>
+                                < /p>
+                                <br>
+
+                            </code>
+                        </div>
+                    </section>
+
+
+	
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/scrollReveal.min.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/twitterFetcher_v10_min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+    </body>
+</html>
+				
