@@ -78,23 +78,20 @@
              
                             </div>
 
-                            <code class="code-v1">
-                                
-                                <p>
-                                    < form action="/search" method="POST" role="search">
-                                    <br>
-                                        {{ csrf_field() }}
-                                        <br>
-                                        < input type="text"  name="q" placeholder="@lang('auth.search')">
-                                        <br>
-                                        < button type="submit" class="site-btn">@lang('auth.search_btn')< /button>
-                                        <br>
-                            
-                                    < /form>
+                            <div class="code-v01">
+                                <span> < form action="/search" method="POST" role="search"> </span>
+                                <br>
+                                <span>   {{ csrf_field() }} </span>
+                                <br>
+                                <span>      < input type="text"  name="q" placeholder="@lang('auth.search')"> </span>
+                                <br>
+                                <span> < button type="submit" class="site-btn">@lang('auth.search_btn')< /button> </span>
+                                <br>
+                                <span> < /form></span>
 
-                                </p>
+                            </div>
 
-                            </code>
+    
                         </div>
                     </section>
                     
@@ -198,8 +195,6 @@
                         </div>
                     </section>
 
-
-	
 
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/jquery.min.js"></script>

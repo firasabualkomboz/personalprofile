@@ -380,3 +380,14 @@ color: #0512FE;
   font-size: 80px;
   line-height: 1.2;
 }
+.code-v1{
+border: solid 2px #7510f7;
+}
+.code-v01{
+    width: 50%;
+    margin-top: 10px;
+    background-color: #7510f7;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
