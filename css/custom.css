@@ -390,3 +390,8 @@ color: #0512FE;
     color: #fff;
     padding: 10px;
 }
+.link_live{
+    border:none !important;
+    color: #7510f7;
+    font-size: 16px;
+}
