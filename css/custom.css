@@ -395,3 +395,34 @@ color: #0512FE;
     color: #7510f7;
     font-size: 16px;
 }
+
+/* footer  */
+
+.footer_section_one img {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.footer_section_one p {
+ text-align: left;
+ margin-top: 20px;
+}
+.footer_section_two h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer_section_two ol li a {
+    color:#aeaeaf;
+    text-transform: uppercase;
+}
+.footer_section_two ol li a:hover {
+    color:#7510f7;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline #7510f7;
+    cursor: pointer;
+    transition: all 0.5s 0.2s;
+
+    
+}
