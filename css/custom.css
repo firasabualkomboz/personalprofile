@@ -296,8 +296,8 @@ color: #0512FE;
     right: 15px;
     bottom: 10px;
     position: fixed !important;
-   z-index: 9999 !important; 
-   overflow: hidden;
+    z-index: 99999 !important; 
+    overflow: hidden;
 
    /* display: none; */
 }
@@ -345,7 +345,7 @@ color: #0512FE;
  .top-project .details-project a{
     color: #2D3748;
     font-size: 14px;
-    color: #7510f7;
+    color: #0075FF;
  }
 /* end top-project */
 .posts{
@@ -401,8 +401,9 @@ color: #0512FE;
 .footer_section_one img {
     width: 50%;
     background-color: #fff;
-    border-radius: 5%;
+    border-radius: 1%;
     overflow: hidden;
+    border: #fff solid 5px;
 }
 .footer_section_one p {
  text-align: left;
@@ -417,10 +418,10 @@ color: #0512FE;
     text-transform: uppercase;
 }
 .footer_section_two ol li a:hover {
-    color:#7510f7;
+    color:#0075FF;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: underline #7510f7;
+    text-decoration: underline #0075FF;
     cursor: pointer;
     transition: all 0.5s 0.2s;
 
@@ -429,4 +430,64 @@ color: #0512FE;
 .project-card{
     text-align: center;
     margin-top: 10%;
+}
+
+
+/* customer reviews  */
+.customer-reviews h2{
+    color: #333333;
+    font-weight: bolder;
+}
+.customer-reviews .card-top{
+    margin-top: 10%;
+    padding: 10%;
+    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);   
+}
+.customer-reviews .card-top:hover{
+    margin-top: 5%;
+    padding: 10%;
+    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);   
+    transition: all 0.3s 0.3s;
+    cursor: pointer;
+}
+.customer-reviews .card-top span i {
+   color: #0075FF;
+   font-size: 28px;
+}
+/* #0075FF
+003585
+*/
+.customer-reviews .card-top p {
+    margin-top: 5%;
+    line-height: 2.5;
+    font-style: italic;
+ }
+ .custom-data{
+     color: #fff;
+     padding: 5%;
+     margin-top: 10%;
+     background-color: #0075FF;
+   
+ } 
+ .st-op {
+    opacity: 0.8;
+ }
+ .st-op:hover {
+    opacity: 100;
+    margin-top: 5%;
+    padding: 10%;
+    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);   
+    transition: all 0.3s 0.3s;
+    cursor: pointer;
+ }
+ 
+ .custom-data span i {
+    color: #fff;
+}
+
+.custom-data h3{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  
 }
