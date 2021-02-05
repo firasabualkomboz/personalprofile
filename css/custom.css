@@ -448,7 +448,7 @@ color: #0512FE;
     padding: 10%;
     box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);   
     transition: all 0.3s 0.3s;
-    cursor: pointer;
+    cursor: grab;
 }
 .customer-reviews .card-top span i {
    color: #0075FF;
@@ -478,7 +478,7 @@ color: #0512FE;
     padding: 10%;
     box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);   
     transition: all 0.3s 0.3s;
-    cursor: pointer;
+    cursor: grab;
  }
  
  .custom-data span i {
