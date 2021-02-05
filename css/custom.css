@@ -424,5 +424,9 @@ color: #0512FE;
     cursor: pointer;
     transition: all 0.5s 0.2s;
 
-    
+}
+
+.project-card{
+    text-align: center;
+    margin-top: 10%;
 }

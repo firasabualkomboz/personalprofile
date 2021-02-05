@@ -1,0 +1,15 @@
+
+
+nav .navbar-brand{
+    color: black;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-family: 'Tajawal', sans-serif;
+}
+.ml-auto {
+    margin-left: auto!important;
+}
+
+.logo{
+    width: 50%;
+}
