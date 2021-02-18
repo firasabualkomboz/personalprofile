@@ -5,25 +5,24 @@
 
 .header-icons span{
 font-weight: bolder;
-color: #0512FE;
+color: #0075FF;
+}
+
+.header-icons button{
+font-weight: bolder;
+color: #fff;
+border: solid 2px #fff;
+
 }
 
 
-.header-icons button{
-    font-weight: bolder;
-    color: #fff;
-    border: solid 2px #fff;
+.header-icons button:hover{
+font-weight: bolder;
+color: #0075FF;
+border: solid 2px #fff;
+background: #fff;
 
-    }
-
-
-    .header-icons button:hover{
-        font-weight: bolder;
-        color: #0512FE;
-        border: solid 2px #fff;
-        background: #fff;
-        
-        }
+}
 
 
 .pure-text-centered {
@@ -31,7 +30,7 @@ color: #0512FE;
 }      
 
 .pure-text-centered .texter{
-    color: #0512FE;
+    color: #0075FF;
 }
 
 /* footer */
@@ -276,7 +275,7 @@ color: #0512FE;
     margin-bottom: 20px;
     margin-top: 50px;
     font-weight: 800;
-    color: #7510F7;
+    color: #0075FF;
     font-family: 'Bree Serif', serif;
 }
 .about-me-knowledge .section-work ol li{
@@ -286,6 +285,59 @@ color: #0512FE;
 }
 
 /* end about-me-knowledge  */
+
+/* start service  */
+.service{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F8F6F6;
+}
+.service h3{
+    color: #0E0F0F;
+    font-size: 28px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+.card-service{
+    margin-top: 50px;
+    text-align: center;
+    color: #0075FF;
+}
+
+.item-card-service{
+    cursor:grab;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #0075FF;
+    box-shadow:   10px 10px 20px -15px #888888;
+    margin: 10px;
+    opacity: 50%;
+}
+.custom-card-service{
+    border-bottom: 2px  solid #0075FF;
+    border-top: 2px  solid #0075FF;
+    opacity: 100%;
+}
+.item-card-service:hover{
+    opacity: 100%;
+    border-top: 2px  solid #0075FF;
+    transition: all .2s .2s;
+}
+.custom-card-service:hover{
+    border-top: 0px  solid #0075FF;
+}
+.item-card-service img{
+  width: 20%;
+}
+.item-card-service h4{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.item-card-service p{
+    color: #777;
+    margin-top: 10px;
+}
+/* end service */
 
  /* scroll top   */
 				
@@ -314,12 +366,12 @@ color: #0512FE;
     margin-top: 10px
 }
 .last-post a{
-    border: 2px solid #7510f7;
-    color: #7510f7;
+    border: 1px solid #0075FF;
+    color: #0075FF;
 }
 .last-post a:hover{
     background-color: #fff;
-    color: #7510f7;
+    color: black;
     border: 2px solid black;
 }
 /* top-project */
@@ -348,23 +400,6 @@ color: #0512FE;
     color: #0075FF;
  }
 /* end top-project */
-.posts{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.posts .card{
-   padding: 50px;
-}
-.posts .card img{
-   margin-top: 20px;
-   width: 250px;
-   height: 150px;
-   border: gray solid 1px;
- }
-
- .posts .card .card-body{
-     margin-top: 20px;
- }
 
  /* page blog posts  */
  .top-title h1{
@@ -433,7 +468,56 @@ color: #0512FE;
 }
 
 
+/* blog posts  */
+
+.push-post{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.push-post h2{
+    color: #333333;
+    font-weight: bolder;
+}
+.push-post img {
+    width: 250px;
+    height: 150px;
+}
+.push-post .push-post-body{
+    margin-top: 20%;
+}
+.push-post .push-post-body .item-push-post{
+    margin-top: 10%;
+}
+.push-post-body ol li {
+    margin-top: 20px;
+    display: inline;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.push-post-body ol li a{color: #000;}
+.push-post-body ol li .demo{
+    background-color: #fff;
+    border-left: #0075FF solid 1px;
+    padding: 10px;
+    font-weight: bold;
+    color: #0075ff;
+    box-shadow:   10px 10px 20px -15px #888888;
+    text-transform: uppercase;
+}
+.push-post-body ol li .demo:hover{
+    background-color: #0075FF;
+    color: #fff;
+    transition: all .3s .3s;
+}
+/* end blog posts */
+
 /* customer reviews  */
+.customer-reviews{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F8F6F6;
+}
 .customer-reviews h2{
     color: #333333;
     font-weight: bolder;
@@ -470,7 +554,7 @@ color: #0512FE;
    
  } 
  .st-op {
-    opacity: 0.8;
+    opacity: 50%;
  }
  .st-op:hover {
     opacity: 100;
@@ -491,3 +575,5 @@ color: #0512FE;
     text-transform: uppercase;
   
 }
+
+/* end css reviews */
