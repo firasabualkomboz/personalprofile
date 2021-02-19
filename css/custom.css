@@ -326,7 +326,13 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif !important;}
      background-color: #fff !important;
  }
 
-
+.code-item-card-blog{
+    border: #eee solid 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000;
+    font-weight: bolder;
+}
 .code-v01{
     width: 100%;
     margin-top: 10px;

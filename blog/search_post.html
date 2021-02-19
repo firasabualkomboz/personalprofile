@@ -69,11 +69,11 @@
                                 <p>First, create a form search</p>
                                 <div class="code-item-card-blog">
 <xmp>
-    <form action="/search" method="POST" role="search">                                   
-    {{csrf_field()}}
-    <input type="text"  name="q" placeholder="@lang('auth.search')">
-    <button type="submit" class="site-btn">@lang('auth.search_btn')</button> 
-    </form>
+<form action="/search" method="POST" role="search">                                   
+{{csrf_field()}}
+<input type="text"  name="q" placeholder="@lang('auth.search')">
+<button type="submit" class="site-btn">@lang('auth.search_btn')</button> 
+</form>
 </xmp>
                                 </div>
                               </div>
