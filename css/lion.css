@@ -58,6 +58,7 @@ padding: 10px;
 margin-bottom: 20px;
 font-size: 12px;
 position: relative;
+min-height: 220px;
 }
 .our-service .col-service h4{
 text-transform: capitalize;
@@ -96,6 +97,7 @@ background-color: #f8f7f7;
 position: relative;
 padding: 20px;
 margin-bottom: 20px;
+min-height: 200px;
 }
 
 .last-project .col-last-project .number{
