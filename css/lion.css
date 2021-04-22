@@ -1,5 +1,4 @@
 body{
-    height: 9000px;
 }
 /* start about-me */
 .about-me{
@@ -73,6 +72,7 @@ margin-bottom: 10px;
 }
 
 /* end our services  */
+
 /* start last project  */
 
 .last-project {
@@ -80,8 +80,6 @@ position: relative;
 padding-top: 40px;
 padding-bottom: 40px;
 }
-
-
 .last-project h2 {
 color: #0F354D;
 text-transform: uppercase;
@@ -134,17 +132,20 @@ transition: all .2s .2s;
 /* end last project  */
 /* start blog  */
 .our-blog{
-    background-color: #f8f7f7;
-    min-height: 600px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    }
-    .our-blog h2 {
+background-color: #f8f7f7;
+min-height: 600px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.our-blog h2 {
 text-align: center;
 color: #0F354D;
 text-transform: uppercase;
-
 }
+.our-blog .row{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
 
 
 .our-blog .col-our-blog{
