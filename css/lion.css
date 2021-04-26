@@ -8,9 +8,9 @@ padding-top: 40px;
 padding-bottom: 40px;
 }
 .about-me h2 {
-    color: #0F354D;
-    text-transform: uppercase;
-    }
+color: #0F354D;
+text-transform: uppercase;
+}
 /* end about-me */
 .our-service {
 text-align: center;
@@ -84,7 +84,6 @@ padding-bottom: 40px;
 color: #0F354D;
 text-transform: uppercase;
 text-align: center;
-
 }
 .last-project .row{
 margin-top: 40px;
@@ -130,6 +129,56 @@ background-color: #0F354D;
 transition: all .2s .2s;
 }
 /* end last project  */
+
+/* start some project  */
+.some-project{
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.some-project .body-some-project{
+position: relative;
+
+}
+.some-project h2 {
+color: #0F354D;
+text-transform: uppercase;
+text-align: center;
+}
+.some-project .row{
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.some-project .body-some-project .overlay-project{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+background-color: #0F354D;
+cursor: pointer;
+display: none;
+color: #fff;
+}
+.some-project .body-some-project:hover .overlay-project{
+display: block;
+opacity:0.75;
+transition: all .2s .2s;
+}
+
+.some-project .body-some-project .overlay-project .text-overlay-project {
+text-transform: uppercase;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+}
+
+
+/* last some project  */
+
+
 /* start blog  */
 .our-blog{
 background-color: #f8f7f7;
@@ -143,9 +192,9 @@ color: #0F354D;
 text-transform: uppercase;
 }
 .our-blog .row{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    }
+margin-top: 40px;
+margin-bottom: 40px;
+}
 
 
 .our-blog .col-our-blog{
@@ -180,13 +229,13 @@ margin-top: 20px;
 position: absolute;
 }
 .our-blog .col-our-blog ol li{
-    display: inline;
+display: inline;
 }
 .our-blog .col-our-blog ol li span {
-    background-color: #f8f7f7;
-    color: #000;
-    padding: 10px;
-    cursor: pointer;
+background-color: #f8f7f7;
+color: #000;
+padding: 10px;
+cursor: pointer;
 }
 .our-blog .col-our-blog ol li span{
 margin-top: 10px;
