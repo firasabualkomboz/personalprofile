@@ -181,7 +181,10 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%); 
 }
-
+.text-overlay-project a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* last some project  */
 
