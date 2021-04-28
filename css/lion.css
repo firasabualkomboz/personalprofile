@@ -144,6 +144,7 @@ padding-bottom: 40px;
 position: relative;
 
 }
+
 .some-project h2 {
 color: #0F354D;
 text-transform: uppercase;
@@ -166,6 +167,7 @@ cursor: pointer;
 display: none;
 color: #fff;
 }
+
 .some-project .body-some-project:hover .overlay-project{
 display: block;
 opacity:0.75;
@@ -186,7 +188,6 @@ transform: translate(-50%, -50%);
 
 /* start blog  */
 .our-blog{
-background-color: #f8f7f7;
 min-height: 600px;
 padding-top: 40px;
 padding-bottom: 40px;
@@ -212,11 +213,29 @@ position: relative;
 .our-blog .col-our-blog img{
 width: 100%;
 border-radius: 2px;
-
+position: relative;
+cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #0F354D;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+.our-blog .col-our-blog img:hover .overlay{
+    display: block;
+transition: all .2s .2s;
 }
 .our-blog .col-our-blog h6{
 margin-top: 20px;
 margin-bottom: 20px;
+font-size: 18px;
 }
 .our-blog .col-our-blog a{
 margin-top: 10px;
