@@ -8,7 +8,9 @@ nav{
 nav .navbar-brand{
     color: #fff !important;
 }
-
+nav .navbar-nav{
+    float: left !important;
+}
 nav ul li a {
     color: #fff !important;
     font-weight: 500;
@@ -17,12 +19,24 @@ nav .dropdown-menu{
     background-color: #f8f7f7;
     color: #0F354D;
 }
-nav .dropdown-menu li a {
-    color: #0F354D !important;
-}
 nav .dropdown-menu .dropdown-item:hover{
+}
+.ml-auto {
+    margin-left: auto;
+}
+nav .dropdown-menu{
+    background-color: #0F354D;
+    color: #f8f7f7 !important;
+    border-radius:0;
+    border: none;
+    border-top: solid #f8f7f7 1px;
+}
+nav .dropdown-menu li a:hover{
+    background-color: #0F354D;
+    color: #fff !important;
     margin-left: 2px;
     transition: all .2s .2s;
+
 }
 /* end nav  */
 /* start about-me */
