@@ -1,5 +1,30 @@
 body{
 }
+/* start nav */
+nav{
+    text-transform: uppercase;
+    background-color: #0F354D !important;
+}
+nav .navbar-brand{
+    color: #fff !important;
+}
+
+nav ul li a {
+    color: #fff !important;
+    font-weight: 500;
+}
+nav .dropdown-menu{
+    background-color: #f8f7f7;
+    color: #0F354D;
+}
+nav .dropdown-menu li a {
+    color: #0F354D !important;
+}
+nav .dropdown-menu .dropdown-item:hover{
+    margin-left: 2px;
+    transition: all .2s .2s;
+}
+/* end nav  */
 /* start about-me */
 .about-me{
 text-align: center;
