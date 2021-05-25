@@ -17,6 +17,11 @@ nav .navbar-brand{
 nav .navbar-nav{
     float: left !important;
 }
+
+nav .navbar-nav .active{
+    border-bottom: solid 2px #0a58ca ;
+    color: #0a58ca  !important;
+}
 nav ul li a {
     color: #0F354D !important;
     font-weight: 500;
@@ -63,9 +68,7 @@ nav .dropdown-menu li a:hover{
     
 }
 .carousel-caption {
-    right: 15%;
     bottom: 25.25rem;
-    left: 15%;
     color: #fff;
     font-weight: bolder;
     font-size: 38px;
