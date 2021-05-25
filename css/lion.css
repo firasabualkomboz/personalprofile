@@ -14,6 +14,10 @@ nav{
 nav .navbar-brand{
     color: #0F354D !important;
 }
+nav .navbar-brand .dev{
+    color: #0a58ca;
+    font-weight: bold;
+}
 nav .navbar-nav{
     float: left !important;
 }
@@ -23,7 +27,7 @@ nav .navbar-nav .active{
     color: #0a58ca  !important;
 }
 nav ul li a {
-    color: #0F354D !important;
+    color: #000 !important;
     font-weight: 500;
 }
 nav .dropdown-menu{
