@@ -1,18 +1,24 @@
 body{
 }
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 /* start nav */
 nav{
     text-transform: uppercase;
-    background-color: #0F354D !important;
+    background-color: #fff !important;
+    border-bottom: solid #0F354D 2px;
 }
 nav .navbar-brand{
-    color: #fff !important;
+    color: #0F354D !important;
 }
 nav .navbar-nav{
     float: left !important;
 }
 nav ul li a {
-    color: #fff !important;
+    color: #0F354D !important;
     font-weight: 500;
 }
 nav .dropdown-menu{
@@ -39,6 +45,35 @@ nav .dropdown-menu li a:hover{
 
 }
 /* end nav  */
+
+/* start slider */
+.carousel-item{
+    position: relative;
+}
+.overlay-slider {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 79%);
+    z-index: 1; 
+    
+}
+.carousel-caption {
+    right: 15%;
+    bottom: 25.25rem;
+    left: 15%;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 38px;
+    z-index: 3;
+}
+
+/* end slider */
+
 /* start about-me */
 .about-me{
 text-align: center;
@@ -49,6 +84,56 @@ padding-bottom: 40px;
 .about-me h2 {
 color: #0F354D;
 text-transform: uppercase;
+}
+.some-skills{
+text-align: left;
+position: relative;
+}
+.some-skills h4{
+    text-transform: capitalize;
+}
+.some-skills ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+.some-skills ol li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #0F354D;
+    color: #fff;
+    width: 50%;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+.some-skills .value-skills{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aquamarine;
+    width: 30%;
+}
+.some-skills p{
+    position: absolute;
+    right: 0;
+    left: 20%;
+}
+.some-skills ol li a{
+text-decoration: none;
+background-color: #cecece;
+padding: 10px;
+color: black;
+border-radius: 4px;
+cursor: none;
+}
+.some-skills ol li span{
+    padding: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 #changeText{
     text-transform: uppercase;
