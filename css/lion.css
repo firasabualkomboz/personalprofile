@@ -68,6 +68,7 @@ nav .dropdown-menu li a:hover{
     right: 0;
     bottom: 0;
     background-color: rgb(0 0 0 / 79%);
+    background-color: #0a58ca94;
     z-index: 1; 
     
 }
@@ -115,18 +116,7 @@ position: relative;
     padding: 5px;
     cursor: pointer;
 }
-.some-skills .value-skills{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: aquamarine;
-    width: 30%;
-}
-.some-skills p{
-    position: absolute;
-    right: 0;
-    left: 20%;
-}
+
 .some-skills ol li a{
 text-decoration: none;
 background-color: #cecece;
