@@ -406,3 +406,20 @@ cursor: pointer;
 margin-top: 10px;
 margin-bottom: 10px;font-size: 12px;
 }
+/* start footer */
+footer{
+    background-color: #0a58ca;
+    padding-bottom: 20px;
+
+}
+footer p {
+text-transform: capitalize;
+color: #fff;
+padding-top: 40px;
+}
+footer ol {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+/* end footer */
