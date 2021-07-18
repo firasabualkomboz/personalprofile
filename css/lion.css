@@ -1,4 +1,6 @@
+
 body{
+    
 }
 ol {
     padding: 0;
@@ -68,12 +70,14 @@ nav .dropdown-menu li a:hover{
     right: 0;
     bottom: 0;
     background-color: rgb(0 0 0 / 79%);
-    background-color: #0a58ca94;
+    background-color: #1e006398; /*0a58ca94 */
     z-index: 1; 
-    
+}
+.carousel-item {
+    max-height: 55vh !important;
 }
 .carousel-caption {
-    bottom: 25.25rem;
+    bottom: 5.25rem;
     color: #fff;
     font-weight: bolder;
     font-size: 38px;
@@ -98,6 +102,18 @@ text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.our-skills .body-skills {
+background-color: #ccc;
+padding: 20px;
+border-radius: 4px;
+cursor: pointer;
+}
+.our-skills .body-skills img {
+width: 100%;
+max-height: 100%;
+display: block;
+}
+
 .our-skills span{
 padding: 10px 20px 10px 20px ;
 border: solid #0a58ca 1px;
@@ -422,4 +438,22 @@ footer ol {
     margin: 0;
     padding: 0;
 }
+footer .content-social{
+    padding-top: 40px;
+}
+footer .content-social span:hover{
+background-color: #0F354D;
+
+}
+footer .content-social i{
+    font-size: 20px;
+}
+footer .content-social span {
+    color: #fff;
+ 
+    border: solid 1px #fff;
+    padding: 5px 10px 5px 10px ;
+    margin-right: 10px;
+}
+
 /* end footer */
