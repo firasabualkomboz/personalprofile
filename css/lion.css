@@ -103,11 +103,20 @@ text-transform: uppercase;
     padding-bottom: 20px;
 }
 .our-skills .body-skills {
-background-color: #ccc;
+background-color: #F8F7F7;
 padding: 20px;
 border-radius: 4px;
 cursor: pointer;
 }
+.our-skills .body-skills:hover{
+background-color: #ccc;
+padding: 50px;
+border-radius: 0px;
+border: dotted #0a58ca 1px;
+transition: all 0.5s 0.5s;
+cursor: pointer;
+}
+
 .our-skills .body-skills img {
 width: 100%;
 max-height: 100%;
