@@ -1,6 +1,10 @@
+:root {
+  --main-bg-color: #FFCA2C;
+}
 
 body{
 font-family: 'Ubuntu', sans-serif;
+
 }
 ol {
 padding: 0;
@@ -155,6 +159,7 @@ display: none;
 .some-project .body-works:hover .overlay{
 display: block;
 opacity: .9;
+transition: all .2s ease-in;
 
 }
 .some-project .body-works .overlay .text{
@@ -455,19 +460,42 @@ transition: all .2s .2s;
 
 /* start footer */
 footer{
-background-color: #0a58ca;
-padding-bottom: 20px;
-
-}
-footer p {
-text-transform: capitalize;
-color: #fff;
+background-color: #111827;
+padding-bottom: 40px;
 padding-top: 40px;
 }
+footer h2{
+  color: #fff;
+  text-transform: capitalize;
+}
+footer p {
+color: #f8f7f773;
+padding-top: 40px;
+}
+footer p a {
+  color: #fff;
+}
+footer p a:hover{
+  color: rgb(190, 190, 190);
+  transition: all .2s ease-in;}
 footer ol {
 color: #000;
 margin: 0;
 padding: 0;
+}
+footer ol li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer ol li a {
+  color: #fff;
+}
+footer ol li a:hover{
+  color: rgb(190, 190, 190);
+  transition: all .2s ease-in;
+}
+footer ol li a i {
+  font-size: 20px;
 }
 footer .content-social{
 padding-top: 40px;
