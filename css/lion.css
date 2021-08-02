@@ -417,89 +417,12 @@ background-color: #0F354D;
 transition: all .2s .2s;
 }
 /* end last project  */
-/* start blog  */
-.our-blog{
-min-height: 600px;
-padding-top: 40px;
-padding-bottom: 40px;
-}
-.our-blog h2 {
-text-align: center;
-color: #0F354D;
-text-transform: uppercase;
-}
-.our-blog .row{
-margin-top: 40px;
-margin-bottom: 40px;
-}
 
-
-.our-blog .col-our-blog{
-background-color: #fff;
-padding: 10px;
-border-radius: 4px;
-min-height: 450px;
-position: relative;
-}
-.our-blog .col-our-blog img{
-width: 100%;
-border-radius: 2px;
-position: relative;
-cursor: pointer;
-}
-.overlay{
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-width: 100%;
-background-color: #0F354D;
-cursor: pointer;
-display: none;
-color: #fff;
-}
-.our-blog .col-our-blog img:hover .overlay{
-display: block;
-transition: all .2s .2s;
-}
-.our-blog .col-our-blog h6{
-margin-top: 20px;
-margin-bottom: 20px;
-font-size: 18px;
-}
-.our-blog .col-our-blog a{
-margin-top: 10px;
-margin-bottom: 10px;
-text-decoration: none;
-border-bottom: #0F354D solid 1px;
-padding: 5px;
-color: #0F354D;
-}
-.our-blog .col-our-blog ol {
-padding: 0;
-margin: 0;
-list-style: none;
-margin-top: 20px;
-position: absolute;
-}
-.our-blog .col-our-blog ol li{
-display: inline;
-}
-.our-blog .col-our-blog ol li span {
-background-color: #f8f7f7;
-color: #000;
-padding: 10px;
-cursor: pointer;
-}
-.our-blog .col-our-blog ol li span{
-margin-top: 10px;
-margin-bottom: 10px;font-size: 12px;
-}
 
 /* START BLOG */
 .blog{
-  background-color: #171D2B;
+  /* background-color: #171D2B; */
+  background-color: #111827;
   color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -508,11 +431,22 @@ margin-bottom: 10px;font-size: 12px;
   color: #f8f7f773;
 }
 .blog .cards-blog .card{
-  background-color: #171D2B;
+  background-color: #111827;
+  border: none;
+}
+.blog .cards-blog .card img{
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
 }
 .blog .cards-blog .card h5{
   color: #fff;
+  text-transform: capitalize;
 }
+.blog .cards-blog .card:hover h5{
+  /* color: #ffe54c; */
+  color: #FFCA2C;
+  transition: all 1s ease-out;}
 .blog a{
   text-decoration: none;
 }
