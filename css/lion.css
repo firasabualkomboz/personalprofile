@@ -241,7 +241,7 @@ transition: 0.2s;
 .our-skills{
 padding-top: 20px;
 padding-bottom: 20px;
-color: #022144;
+color: var(--paragraph);
 }
 .our-skills .body-skills {
 background-color: #FCFCFC;
@@ -267,7 +267,7 @@ border-radius: 25% 10%;
 cursor: pointer;
 }
 .our-skills h4{
-color: #0F354D;
+color: var(--heading);
 }
 /* end our-skills */
 .some-skills{

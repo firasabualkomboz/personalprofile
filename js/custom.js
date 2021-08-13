@@ -12,7 +12,7 @@
     var text = ["Developer", "Designer", "Covert design","website design","backend","PHP","FRONT-END","OTHERS"];
     var counter = 0;
     var elem = document.getElementById("changeText");
-    setInterval(change, 300);
+    setInterval(change, 500);
 
     function change() {
      elem.innerHTML = text[counter];
