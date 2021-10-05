@@ -245,33 +245,26 @@ color: var(--paragraph);
 }
 .our-skills .body-skills {
 background-color: #FCFCFC;
-padding: 20px;
+padding: 10px;
 border-radius: 4px;
+text-align: center;
 }
 .our-skills .body-skills:hover{
 background-color: #FFF;
 border: solid rgb(241, 241, 241) 1px;
-transition: all 0.5s;
+transition: background-color 0.s;
 }
 
 .our-skills .body-skills img {
-width: 50%;
+width: 25%;
 }
 
-.our-skills span{
-padding: 10px 20px 10px 20px ;
-border: solid #0a58ca 1px;
-color: #0a58ca;
-text-transform: capitalize;
-border-radius: 25% 10%;
-cursor: pointer;
-}
 .our-skills h4{
 color: var(--heading);
 }
 /* end our-skills */
 .some-skills{
-text-align: left;
+text-align: center;
 position: relative;
 }
 .some-skills h4{
