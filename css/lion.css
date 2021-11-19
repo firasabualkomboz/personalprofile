@@ -242,6 +242,7 @@ transition: 0.2s;
 padding-top: 20px;
 padding-bottom: 20px;
 color: var(--paragraph);
+background-color: #FEFEFE;
 }
 .our-skills .body-skills {
 background-color: #FCFCFC;
@@ -249,59 +250,18 @@ padding: 10px;
 border-radius: 4px;
 text-align: center;
 }
-.our-skills .body-skills:hover{
-background-color: #FFF;
-border: solid rgb(241, 241, 241) 1px;
-transition: background-color 0.s;
-}
-
 .our-skills .body-skills img {
 width: 25%;
 }
-
+.our-skills .body-skills h6 {
+color: var(--heading);
+}
 .our-skills h4{
 color: var(--heading);
 }
 /* end our-skills */
-.some-skills{
-text-align: center;
-position: relative;
-}
-.some-skills h4{
-text-transform: capitalize;
-}
-.some-skills ol {
-padding: 0;
-margin: 0;
-list-style: none;
-margin-top: 10px;
-}
-.some-skills ol li{
-margin-bottom: 20px;
-margin-top: 20px;
-background-color: #0F354D;
-color: #fff;
-width: 50%;
-border-radius: 4px;
-padding: 5px;
-cursor: pointer;
-}
 
-.some-skills ol li a{
-text-decoration: none;
-background-color: #cecece;
-padding: 10px;
-color: black;
-border-radius: 4px;
-cursor: none;
-}
-.some-skills ol li span{
-padding: 10px;
-border-radius: 4px;
-text-transform: uppercase;
-font-weight: 600;
 
-}
 #changeText{
 text-transform: uppercase;
 color: var(--secondary);
