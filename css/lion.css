@@ -409,6 +409,9 @@ transition: all .2s .2s;
   height: 10vw;
   object-fit: cover;
 }
+.blog a{
+  color: #fff;
+}
 .blog .cards-blog .card h5{
   color: #fff;
   text-transform: capitalize;
