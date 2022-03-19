@@ -389,6 +389,43 @@ transition: all .2s .2s;
 /* end last project  */
 
 
+/* START OUR BLOG  */
+
+.our-blog{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our-blog .row{
+  text-transform: capitalize;
+}
+.our-blog .card-blog{
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 10px;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.our-blog .card-blog h5{
+  color: #000;
+  font-size: 16px;
+}
+.our-blog .card-blog p{
+  color: #666060;
+  font-size: 14px;
+}
+.our-blog .card-blog button{
+background-color: #0d6efd;
+padding: 10px 150px 10px 150px;
+border: none;
+
+}
+.our-blog .card-blog a{
+padding: 10px;
+color: #fff;
+text-decoration: none;
+}
+/* END OUR BLOG  */
 /* START BLOG */
 .blog{
   /* background-color: #171D2B; */
@@ -396,7 +433,9 @@ transition: all .2s .2s;
   color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-transform: capitalize;
 }
+
 .blog p {
   color: #f8f7f773;
 }
