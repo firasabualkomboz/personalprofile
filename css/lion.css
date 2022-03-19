@@ -426,44 +426,6 @@ color: #fff;
 text-decoration: none;
 }
 /* END OUR BLOG  */
-/* START BLOG */
-.blog{
-  /* background-color: #171D2B; */
-  background-color: #111827;
-  color: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-transform: capitalize;
-}
-
-.blog p {
-  color: #f8f7f773;
-}
-.blog .cards-blog .card{
-  background-color: #111827;
-  border: none;
-}
-.blog .cards-blog .card img{
-  width: 100%;
-  height: 10vw;
-  object-fit: cover;
-}
-.blog a{
-  color: #fff;
-}
-.blog .cards-blog .card h5{
-  color: #fff;
-  text-transform: capitalize;
-}
-.blog .cards-blog .card:hover h5{
-  /* color: #ffe54c; */
-  color: var(--paragraph);
-  transition: all 1s ease-out;}
-.blog a{
-  text-decoration: none;
-}
-/* END BLOG */
-
 
 /* start footer */
 footer{
