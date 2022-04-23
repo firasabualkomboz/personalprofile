@@ -169,8 +169,7 @@ display: none;
 .some-project .body-works:hover .overlay{
 display: block;
 opacity: .9;
-transition: all .2s ease-in;
-
+transition: all .2s .2s ease-in;
 }
 .some-project .body-works .overlay .text{
 position: absolute;
@@ -208,11 +207,12 @@ font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  color: #fff;
 }
 
 .button-52:after {
 content: "";
-background-color: #ffe54c;
+background-color: #0a58ca;
 width: 100%;
 z-index: -1;
 position: absolute;
